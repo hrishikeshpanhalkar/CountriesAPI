@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_cardview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout3"
+            android:weightSum="2"
+            android:layout_below="@+id/imageview">
+
+            <TextView
+                android:id="@+id/country_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="India"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/capital"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:layout_height="wrap_content"
+                android:text="Delhi"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout3">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Region"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Asia"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                android:textSize="40sp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Subregion"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="South Asia"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="40sp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Population"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Polulation"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginEnd="5dp"
+                android:textSize="40sp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Languages"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Languages"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="40sp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@+id/layout2"
+            android:id="@+id/Borders"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Borders"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="40sp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_below="@+id/Borders"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
